@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Passenger Verification</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #eaf6ff, #ffffff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 430px;
+            background: #ffffff;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        .header {
+            background: #0877b9;
+            color: white;
+            text-align: center;
+            padding: 28px 20px;
+        }
+
+        .header .icon {
+            font-size: 42px;
+            margin-bottom: 8px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            letter-spacing: 0.5px;
+        }
+
+        .header p {
+            margin-top: 7px;
+            font-size: 13px;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 28px 24px;
+            text-align: center;
+        }
+
+        .check-circle {
+            width: 88px;
+            height: 88px;
+            background: #20a957;
+            color: white;
+            border-radius: 50%;
+            margin: 0 auto 17px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .verified {
+            color: #168542;
+            font-size: 27px;
+            font-weight: bold;
+        }
+
+        .message {
+            margin-top: 8px;
+            color: #6b7280;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .details {
+            margin-top: 25px;
+            border: 1px solid #e1e7eb;
+            border-radius: 16px;
+            padding: 18px;
+            text-align: left;
+        }
+
+        .details-title {
+            font-size: 17px;
+            font-weight: bold;
+            color: #111827;
+            margin-bottom: 14px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            padding: 10px 0;
+            border-bottom: 1px solid #edf0f2;
+            font-size: 14px;
+        }
+
+        .row:last-child {
+            border-bottom: none;
+        }
+
+        .label {
+            color: #737b83;
+        }
+
+        .value {
+            color: #111827;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .valid {
+            color: #168542;
+        }
+
+        .cleared {
+            margin-top: 22px;
+            padding: 14px;
+            background: #eaf8ef;
+            border: 1px solid #bde8ca;
+            border-radius: 12px;
+            color: #168542;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .footer {
+            background: #f8fafc;
+            text-align: center;
+            padding: 17px;
+            color: #8a9299;
+            font-size: 11px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+        <div class="icon">✈️</div>
+
+        <h1>PASSENGER VERIFICATION</h1>
+
+        <p>
+            Secure Passenger Verification System
+        </p>
+
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+
+    <div class="content">
+
+        <!-- VERIFIED ICON -->
+
+        <div class="check-circle">
+            ✓
+        </div>
+
+        <div class="verified">
+            PASSENGER VERIFIED
+        </div>
+
+        <div class="message">
+            The passenger pass has been successfully
+            verified and is valid for entry.
+        </div>
+
+
+        <!-- PASS DETAILS -->
+
+        <div class="details">
+
+            <div class="details-title">
+                🎫 Passenger Pass Details
+            </div>
+
+            <div class="row">
+                <span class="label">Pass ID</span>
+                <span class="value">PV-2026-0187</span>
+            </div>
+
+            <div class="row">
+                <span class="label">Flight</span>
+                <span class="value">GA 2026</span>
+            </div>
+
+            <div class="row">
+                <span class="label">From</span>
+                <span class="value">BLR</span>
+            </div>
+
+            <div class="row">
+                <span class="label">To</span>
+                <span class="value">DEL</span>
+            </div>
+
+            <div class="row">
+                <span class="label">Travel Date</span>
+                <span class="value">18 AUG 2026</span>
+            </div>
+
+            <div class="row">
+                <span class="label">Seat</span>
+                <span class="value">18A</span>
+            </div>
+
+            <div class="row">
+                <span class="label">Pass Status</span>
+                <span class="value valid">VALID ✓</span>
+            </div>
+
+        </div>
+
+
+        <!-- CLEARANCE -->
+
+        <div class="cleared">
+            ✓ PASS CLEARED FOR ENTRY
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+
+        Passenger Verification System<br>
+
+        Digital Verification Demonstration
+
+    </div>
+
+</div>
+
+</body>
+</html>
